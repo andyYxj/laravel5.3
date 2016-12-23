@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Lxu\Alipay;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redis;
 
 class TestController extends Controller
 {
@@ -23,5 +25,14 @@ class TestController extends Controller
         var_dump($item);die();
 
       //  return view('test/index',$data);
+
+
     }
+        public  function redis(){
+            /*$redis = Redis::connection();
+            var_dump($redis);*/
+            $b=Redis::set('name', 'Taylor');
+            $a=Redis::get('name');
+            dd($b);
+        }
 }
