@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1c6e9e0bc009faf5533d34e14db4d2a",
-    "content-hash": "49c6a970415d2d945fdb979da218932d",
+    "hash": "2bebd309c139f68fab306cb65dccacd5",
+    "content-hash": "31d5e18d3400b36652ad6f8faa2ce1ed",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -345,6 +345,52 @@
                 "laravel5"
             ],
             "time": "2016-05-13 04:05:35"
+        },
+        {
+            "name": "laravel-alipay/alipay",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gaoxuxu123/laravel-alipay.git",
+                "reference": "5184ee5dad9b9fff0382324baa8b6ce686596a16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/gaoxuxu123/laravel-alipay/5184ee5dad9b9fff0382324baa8b6ce686596a16.zip",
+                "reference": "5184ee5dad9b9fff0382324baa8b6ce686596a16",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.0",
+                "illuminate/events": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lxu\\Alipay\\": "src/Lxu/Alipay"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "gaoxuxu",
+                    "email": "394703554@qq.com"
+                }
+            ],
+            "description": "支付宝SDK在Laravel5封装包。",
+            "homepage": "https://github.com/gaoxuxu123/laravel-alipay",
+            "keywords": [
+                "Alipay SDK",
+                "alipay",
+                "laravel",
+                "laravel 5"
+            ],
+            "time": "2016-05-11 04:23:48"
         },
         {
             "name": "laravel/framework",
@@ -3490,7 +3536,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "laravel-alipay/alipay": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
